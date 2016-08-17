@@ -26,6 +26,16 @@ $(function() {
 		$hint.show();
 
 	});
+	$element.focusin( function(e){
+		var $hint = $(this).siblings('.hint');
+			$hint.show();
+
+	});
+	$element.focusout(function(e){
+		var $hint = $(this).siblings('.hint');
+			$hint.hide();
+
+	});
 
 })
 
